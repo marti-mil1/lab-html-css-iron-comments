@@ -1,11 +1,59 @@
+:root {
+    --darkblue: rgb(25, 33, 41);
+    --lightblue: rgb(67, 163, 230);
+    --textcolor: rgb(255,255,255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;
     padding-top: 100px;
-    width: 100vw;    
-
+    width: 100vw;  
+    background-color: var(--darkblue);
+    color: var(--textcolor);
+    line-height: 1.5;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.3px;
 }
 
-#form-container {
-    margin: auto;
+.form-container {
+    margin: 0 auto;
+    width: 250px;
+    height: 390px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+input {
+    width: 180px;
+    height: 20px
+}
+
+.form-container, input, textarea {
+    border: var(--lightblue) 1.5px solid;
+    border-radius: 2px;
+}
+
+.checkbox-text {
+    font-style: oblique;
+    padding-top: 0;
+}
+
+.checkbox-cell {
+    width: 15px;
+    margin-right: 0;
+    vertical-align: sub;
+}
+
+.button {
+    background-color: var(--lightblue);;
+    color: var(--textcolor);
+    border-radius: 10px;
+    border: none;
+    height: 25px;
 }

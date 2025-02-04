@@ -10,10 +10,24 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
-
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
+    
+ <fieldset class="form-container">
+    <form method="" action="" class="name">
+        <label for="name">Name:</label><br>
+        <input type="text" name="text" id="text"><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br>
+   
+        Comment:
+        <textarea id="comment" name="comment" rows="10" cols="19" ></textarea>
+    
+        <span class="checkbox-text">Receive email updates?</span>
+        <input class="checkbox-cell"type="checkbox" name="agreement"/>
+        <button class="button" type="submit">Submit</button>
     </form>
+
+ </fieldset>
 
 </body>
 </html>
